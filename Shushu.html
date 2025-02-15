@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question for You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #ef99da;
+        }
+        h1 {
+            color: #333;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #28a745;
+            color: rgb(240, 168, 206);
+        }
+        .no {
+            background-color: #000000;
+            color: white;
+        }
+        #meme {
+            display: none;
+            margin-top: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will you be my girlfriend?</h1>
+    
+    <div class="buttons">
+        <button class="no" onclick="showMeme()">No</button>
+        <button class="yes" onclick="window.location.href='https://open.spotify.com/track/5LZtB6nxvjIhUoElp3Zqk0?si=y3njL0dTRCS08O_EJAIpjA'">Yes</button>
+    </div>
+
+    <img id="meme" src="C:\Users\djgfo\OneDrive\الصور\ayasad.jpg" alt="Sad Meme">
+
+    <script>
+        function showMeme() {
+            document.getElementById("meme").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
